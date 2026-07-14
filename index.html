@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAPA — Privacy Policy</title>
+<style>
+  :root {
+    --navy: #060A14;
+    --blue: #3B82F6;
+    --text: #1F2937;
+    --muted: #6B7280;
+    --bg: #FFFFFF;
+    --surface: #F5F7FB;
+    --border: #E5E9F0;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    line-height: 1.7;
+    font-size: 16px;
+  }
+  header {
+    background: var(--navy);
+    color: #FFFFFF;
+    padding: 48px 24px 40px;
+    text-align: center;
+  }
+  header .brand { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; }
+  header .brand span { color: var(--blue); }
+  header h1 { font-size: 20px; font-weight: 600; margin-top: 8px; opacity: 0.9; }
+  header .updated { font-size: 13px; opacity: 0.55; margin-top: 10px; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+  .highlight {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--blue);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 36px;
+    font-size: 15px;
+  }
+  h2 { font-size: 19px; font-weight: 800; color: var(--navy); margin: 36px 0 12px; }
+  p { margin-bottom: 14px; }
+  ul { margin: 0 0 14px 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--navy); }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">KAPA<span>.</span></div>
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated: July 14, 2026</div>
+</header>
+
+<main>
+
+  <div class="highlight">
+    <strong>Your Privacy Matters.</strong> KAPA is built privacy-first. Your financial data stays on your device — we never sell it or use it for ads.
+  </div>
+
+  <h2>1. Who We Are</h2>
+  <p>KAPA is a personal finance app developed by Duxie Dev. We are the data controller responsible for your information under this policy.</p>
+  <p>Contact: <a href="mailto:hello@duxiedev.com">hello@duxiedev.com</a></p>
+
+  <h2>2. What Data KAPA Collects</h2>
+  <p>KAPA is designed as a privacy-first, on-device application. Here is exactly what we collect and why:</p>
+  <ul>
+    <li><strong>SMS content</strong> — KAPA reads bank alert SMS messages on your device to detect and categorise transactions. This data is processed locally on your phone and is never transmitted to any server. Personal messages, conversations, and OTPs are ignored entirely.</li>
+    <li><strong>Profile information</strong> — Your name, email address, and phone number, entered voluntarily during setup. This is stored locally on your device.</li>
+    <li><strong>Bank account preferences</strong> — The banks and account types you choose to monitor. Stored locally.</li>
+    <li><strong>Budget and spending data</strong> — Budgets you create and the transactions KAPA tracks. Stored locally on your device.</li>
+    <li><strong>Subscription information</strong> — When you subscribe to KAPA Pro, your email, chosen plan, and subscription status (active, canceled, expired) are stored securely on our backend so the app can verify your Pro access across reinstalls and devices.</li>
+    <li><strong>Payment information</strong> — Payments are processed by Flutterwave, our payment provider. KAPA never sees or stores your card details. Your name and email are shared with Flutterwave to process the transaction.</li>
+    <li><strong>Crash and diagnostic data</strong> — If the app crashes, technical crash logs (device model, OS version, app version, and error details) are sent to Sentry, our crash reporting service, to help us fix bugs. Crash logs never include your SMS messages, transactions, or financial data.</li>
+  </ul>
+
+  <h2>3. What KAPA Does NOT Collect</h2>
+  <p>We do not collect, store, or transmit:</p>
+  <ul>
+    <li>The content of your SMS messages to any server</li>
+    <li>Your transaction history, budgets, or spending data</li>
+    <li>Your bank account numbers or balances</li>
+    <li>Your location data</li>
+    <li>Advertising identifiers</li>
+    <li>Any data for advertising or third-party marketing purposes</li>
+  </ul>
+  <p>KAPA does not sell, rent, or share your personal data with any third party for commercial purposes, and does not display third-party ads.</p>
+
+  <h2>4. How Your Data Is Stored</h2>
+  <p>All financial data — transactions, budgets, account preferences, and profile information — is stored exclusively on your device using secure local storage.</p>
+  <p>The only data that leaves your device is:</p>
+  <ul>
+    <li>Your name and email address, sent to Flutterwave when you purchase a Pro subscription</li>
+    <li>Your email, plan, and subscription status, stored on our secure backend (hosted by Supabase) to verify your Pro access</li>
+    <li>Technical crash logs sent to Sentry if the app crashes</li>
+  </ul>
+  <p>No financial transaction data or SMS content is ever sent to our servers. All data transmitted to our backend is encrypted in transit (HTTPS/TLS).</p>
+
+  <h2>5. SMS Permission</h2>
+  <p>KAPA requests permission to read SMS messages on your Android device (READ_SMS and RECEIVE_SMS). This permission is used solely to detect bank alert messages and extract transaction information automatically — this is KAPA's core functionality.</p>
+  <p>KAPA asks for your explicit consent during onboarding before requesting this permission. Only messages from recognised banks and financial institutions are processed. All processing happens locally on your device. The content of your messages is never uploaded, shared, or stored outside your phone.</p>
+  <p>You may revoke this permission at any time in your device settings (Settings → Apps → KAPA → Permissions). If revoked, KAPA will no longer detect transactions automatically, but all other features will continue to work.</p>
+
+  <h2>6. Bank Statement Uploads</h2>
+  <p>You may optionally upload bank statement files to import older transactions. Statements are parsed entirely on your device — the file and the transactions extracted from it never leave your phone.</p>
+  <p>If you voluntarily email a statement to our support address for troubleshooting, it is used only to improve statement compatibility and is deleted after analysis.</p>
+
+  <h2>7. Payment Processing</h2>
+  <p>KAPA Pro subscriptions are processed by Flutterwave, a licensed, PCI-DSS compliant payment service provider operating across Africa and globally. When you subscribe:</p>
+  <ul>
+    <li>Your payment details are handled entirely by Flutterwave's secure checkout</li>
+    <li>KAPA receives only a confirmation that your payment was successful</li>
+    <li>We verify this confirmation server-side to prevent fraud</li>
+    <li>Your card details are never seen or stored by KAPA</li>
+  </ul>
+  <p>Flutterwave's privacy policy governs how they handle your payment data. You can review it at <a href="https://flutterwave.com">flutterwave.com</a>.</p>
+
+  <h2>8. Your Rights</h2>
+  <p>In accordance with the Nigeria Data Protection Act (NDPA) and applicable data protection laws, you have the right to:</p>
+  <ul>
+    <li><strong>Access your data</strong> — all your data is visible within the KAPA app; you may also request a copy of your subscription record</li>
+    <li><strong>Correct your data</strong> — update your profile anytime in Settings</li>
+    <li><strong>Delete your data</strong> — use "Clear All Data" or "Delete Account" in Settings to permanently remove everything from your device; email us to delete your subscription record (completed within 30 days)</li>
+    <li><strong>Withdraw consent</strong> — revoke SMS permission in device settings, or uninstall KAPA at any time; all local data is removed with the app</li>
+    <li><strong>Lodge a complaint</strong> — with the Nigeria Data Protection Commission or your local data protection authority</li>
+  </ul>
+  <p>For any privacy-related requests, contact us at <a href="mailto:hello@duxiedev.com">hello@duxiedev.com</a>.</p>
+
+  <h2>9. Data Retention</h2>
+  <p>Your data remains on your device for as long as you use KAPA. If you use "Delete Account" in Settings, all data is permanently deleted from your device immediately.</p>
+  <p>Your subscription record is retained while your subscription is active and for a reasonable period afterward for accounting purposes, then deleted. Crash logs are automatically deleted by Sentry after its retention period (typically 90 days).</p>
+  <p>We do not retain any copies of your financial data on our servers, because we never store it there in the first place.</p>
+
+  <h2>10. Children's Privacy</h2>
+  <p>KAPA is a personal finance application intended for users aged 18 and over. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us at <a href="mailto:hello@duxiedev.com">hello@duxiedev.com</a> and we will take steps to delete it.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last Updated" date at the top of this page and notify you through the app.</p>
+  <p>Continued use of KAPA after any changes constitutes your acceptance of the updated policy.</p>
+
+  <h2>12. Contact Us</h2>
+  <p>If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us:</p>
+  <p>
+    Privacy enquiries: <a href="mailto:hello@duxiedev.com">hello@duxiedev.com</a><br>
+    General support: <a href="mailto:hello@duxiedev.com">hello@duxiedev.com</a>
+  </p>
+  <p>
+    <strong>Duxie Dev</strong><br>
+    <a href="https://www.duxiedev.com">www.duxiedev.com</a>
+  </p>
+
+</main>
+
+<footer>
+  © 2026 Duxie Dev · KAPA — Your money, your rules.
+</footer>
+
+</body>
+</html>
