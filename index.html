@@ -63,7 +63,7 @@
 <header>
   <div class="brand">KAPA<span>.</span></div>
   <h1>Privacy Policy</h1>
-  <div class="updated">Last updated: August 19, 2026</div>
+  <div class="updated">Last updated: October 4, 2026</div>
 </header>
 
 <main>
@@ -83,8 +83,8 @@
     <li><strong>Profile information</strong> — Your name, email address, and monthly income (optional), entered voluntarily during setup. This is stored locally on your device.</li>
     <li><strong>Bank account preferences</strong> — The banks and account types you choose to monitor. Stored locally.</li>
     <li><strong>Budget and spending data</strong> — Budgets you create and the transactions KAPA tracks. Stored locally on your device.</li>
-    <li><strong>Subscription information</strong> — When you subscribe to KAPA Pro, your email, chosen plan, and subscription status (active, canceled, expired) are stored securely on our backend so the app can verify your Pro access across reinstalls and devices.</li>
-    <li><strong>Payment information</strong> — Payments are processed by Flutterwave, our payment provider. KAPA never sees or stores your card details. Your name and email are shared with Flutterwave to process the transaction.</li>
+    <li><strong>Subscription information</strong> — When you subscribe to KAPA Pro, our backend stores your plan, subscription status (active, canceled, expired), subscription dates, and your Google Play purchase token, so the app can confirm your Pro access, including after you reinstall the app or change phone. If you entered an email address in your profile, it is stored with this record; if you did not, we store a random placeholder identifier instead.</li>
+    <li><strong>Payment information</strong> — Payments are processed by Google Play. KAPA never sees or stores your card details or other payment method details.</li>
     <li><strong>Crash and diagnostic data</strong> — If the app crashes, technical crash logs (device model, OS version, app version, and error details) are sent to Sentry, our crash reporting service, to help us fix bugs. Crash logs never include your SMS messages, transactions, or financial data.</li>
   </ul>
 
@@ -104,8 +104,7 @@
   <p>All financial data — transactions, budgets, account preferences, and profile information — is stored exclusively on your device using secure local storage.</p>
   <p>The only data that leaves your device is:</p>
   <ul>
-    <li>Your name and email address, sent to Flutterwave when you purchase a Pro subscription</li>
-    <li>Your email, plan, and subscription status, stored on our secure backend (hosted by Supabase) to verify your Pro access</li>
+    <li>Your plan, subscription status, subscription dates, Google Play purchase token, and (only if you entered one) your email address, stored on our secure backend (hosted by Supabase) to confirm your Pro access</li>
     <li>Technical crash logs sent to Sentry if the app crashes</li>
   </ul>
   <p>No financial transaction data or SMS content is ever sent to our servers. All data transmitted to our backend is encrypted in transit (HTTPS/TLS).</p>
@@ -116,14 +115,15 @@
   <p>You may revoke this permission at any time in your device settings (Settings → Apps → KAPA → Permissions). If revoked, KAPA will no longer detect transactions automatically, but all other features will continue to work.</p>
 
   <h2>6. Payment Processing</h2>
-  <p>KAPA Pro subscriptions are processed by Flutterwave, a licensed, PCI-DSS compliant payment service provider operating across Africa and globally. When you subscribe:</p>
+  <p>KAPA Pro subscriptions are purchased and billed through Google Play. When you subscribe:</p>
   <ul>
-    <li>Your payment details are handled entirely by Flutterwave's secure checkout</li>
-    <li>KAPA receives only a confirmation that your payment was successful</li>
-    <li>We verify this confirmation server-side to prevent fraud</li>
+    <li>Your payment details are handled entirely by Google Play's secure checkout</li>
+    <li>KAPA receives only a confirmation that your subscription is active, which we verify with Google to prevent fraud</li>
     <li>Your card details are never seen or stored by KAPA</li>
+    <li>You manage and cancel your subscription in Google Play (Play Store → Payments &amp; subscriptions → Subscriptions)</li>
   </ul>
-  <p>Flutterwave's privacy policy governs how they handle your payment data. You can review it at <a href="https://flutterwave.com">flutterwave.com</a>.</p>
+  <p>Google's privacy policy governs how Google handles your payment data. You can review it at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+  <p>Earlier versions of KAPA also offered payment through Flutterwave. If you subscribed that way, Flutterwave processed that payment under its own privacy policy.</p>
 
   <h2>7. Your Rights</h2>
   <p>In accordance with the Nigeria Data Protection Act (NDPA) and applicable data protection laws, you have the right to:</p>
@@ -138,7 +138,7 @@
 
   <h2>8. Data Retention</h2>
   <p>Your data remains on your device for as long as you use KAPA. If you use "Delete Account" in Settings, all data is permanently deleted from your device immediately.</p>
-  <p>Your subscription record is retained while your subscription is active and for a reasonable period afterward for accounting purposes, then deleted. Crash logs are automatically deleted by Sentry after its retention period (typically 90 days).</p>
+  <p>Your subscription record (plan, status, dates, purchase token and optional email) is retained while your subscription is active and for a reasonable period afterward for accounting and support purposes, then deleted. Crash logs are automatically deleted by Sentry after its retention period (typically 90 days).</p>
   <p>We do not retain any copies of your financial data on our servers, because we never store it there in the first place.</p>
 
   <h2>9. Children's Privacy</h2>
